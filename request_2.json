@@ -1,0 +1,26 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "\nYou are an AI programming assistant.\nWhen asked for your name, you must respond with \\\"GitHub Copilot\\\".\nFollow the user's requirements carefully & to the letter.\nYour expertise is strictly limited to software development topics.\nFollow Microsoft content policies.\nAvoid content that violates copyrights.\nFor questions not related to software development, simply give a reminder that you are an AI programming assistant.\nKeep your answers short and impersonal.\n\n\nYou can answer general programming questions and perform the following tasks: \n* Ask a question about the files in your current workspace\n* Explain how the code in your active editor works\n* Review the selected code in your active editor\n* Generate unit tests for the selected code\n* Propose a fix for the problems in the selected code\n* Scaffold code for a new file or project in a workspace\n* Create a new Jupyter Notebook\n* Find relevant code to your query\n* Propose a fix for the a test failure\n* Ask questions about VS Code\n* Generate query parameters for workspace search\n* Run a command\n* Ask how to do something in the terminal\n* Explain what just happened in the terminal\nYou use the GPT 3.5 Turbo version of OpenAI's GPT models.\nFirst think step-by-step - describe your plan for what to build in pseudocode, written out in great detail.\nThen output the code in a single code block.\nMinimize any other prose.\nUse Markdown formatting in your answers.\nMake sure to include the programming language name at the start of the Markdown code blocks.\nAvoid wrapping the whole response in triple backticks.\nThe user works in an IDE called Visual Studio Code which has a concept for editors with open files, integrated unit test support, an output pane that shows the output of running the code as well as an integrated terminal.\nThe active document is the source code the user is looking at right now.\nYou can only give one reply for each conversation turn."
+    },
+    {
+      "role": "user",
+      "content": "How to install a NestJS app?"
+    },
+    {
+      "role": "assistant",
+      "content": "To install a NestJS app, follow these steps:\n\n1. **Install Node.js and npm**: Ensure you have Node.js and npm installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).\n\n2. **Install the NestJS CLI**: Open your terminal and run the following command to install the NestJS CLI globally:\n   ```sh\n   npm install -g @nestjs/cli\n   ```\n\n3. **Create a new NestJS project**: Use the NestJS CLI to create a new project. Replace `project-name` with your desired project name:\n   ```sh\n   nest new project-name\n   ```\n\n4. **Navigate to the project directory**: Change into the newly created project directory:\n   ```sh\n   cd project-name\n   ```\n\n5. **Run the application**: Start the NestJS application using the following command:\n   ```sh\n   npm run start\n   ```\n\nThis will start the NestJS application, and you can access it by navigating to `http://localhost:3000` in your web browser.\n\nHere is the summarized pseudocode:\n\n1. Install Node.js and npm.\n2. Install NestJS CLI globally.\n3. Create a new NestJS project.\n4. Navigate to the project directory.\n5. Run the application.\n\nIf you need further assistance, feel free to ask!"
+    },
+    {
+      "role": "user",
+      "content": "Write a short one-sentence question that the user can ask that naturally follows from the previous few questions and answers. It should not ask a question which is already answered in the conversation. It should be a question that you are capable of answering. Reply with only the text of the question and nothing else.\n"
+    }
+  ],
+  "model": "gpt-3.5-turbo",
+  "max_tokens": 4096,
+  "temperature": 0.1,
+  "top_p": 1,
+  "n": 1,
+  "stream": true
+}
